@@ -1,0 +1,1 @@
+export ANDROID_ENV=1

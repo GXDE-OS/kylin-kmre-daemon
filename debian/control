@@ -1,0 +1,28 @@
+Source: kylin-kmre-daemon
+Section: admin
+Priority: optional
+Maintainer: Machao <machao@kylinos.cn>
+Build-Depends: debhelper (>=9),
+               cmake (>=2.8),
+               g++,
+               pkg-config,
+               libdbus-c++-dev,
+               libdbus-1-dev,
+               libglibmm-2.4-dev,
+               libfuse-dev,
+               libfuse3-dev,
+               libjsoncpp-dev,
+               libssl-dev
+Standards-Version: 3.9.6
+Homepage: https://www.kylinos.cn
+
+Package: kylin-kmre-daemon
+Architecture: amd64 arm64
+Conflicts: kydroid2, kydroid2-app-data, kydroid2-daemon, kydroid2-filewatcher, kydroid2-fuse, kydroid2-image-data, kylin-kmre-fuse, kydroid-daemon, kydroid-fuse
+Replaces: kylin-kmre-fuse, kydroid-daemon, kydroid-fuse
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         crudini,
+         rsync,
+Description: A DBus daemon for kmre
+ A DBus daemon for kmre.

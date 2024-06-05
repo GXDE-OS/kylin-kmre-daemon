@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<node name="/cn/kylinos/Kmre">
+    <interface name="cn.kylinos.Kmre">
+        <method name="Prepare">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="i" name="ret" direction="out" />
+        </method>
+        <method name="StartContainer">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="i" name="width" direction="in" />
+            <arg type="i" name="height" direction="in" />
+            <arg type="i" name="ret" direction="out" />
+        </method>
+        <method name="StartContainerSilently">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="i" name="ret" direction="out" />
+        </method>
+        <method name="ChangeContainerRuntimeStatus">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="i" name="ret" direction="out" />
+        </method>
+        <method name="StopContainer">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="i" name="ret" direction="out" />
+        </method>
+        <method name="SetFocusOnContainer">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="i" name="onFocus" direction="in" />
+        </method>
+        <method name="SetPropOfContainer">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="s" name="prop" direction="in" />
+            <arg type="s" name="value" direction="in" />
+        </method>
+        <method name="GetPropOfContainer">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="s" name="prop" direction="in" />
+            <arg type="s" name="value" direction="out" />
+        </method>
+        <method name="SetDefaultPropOfContainer">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="s" name="prop" direction="in" />
+            <arg type="s" name="value" direction="in" />
+        </method>
+        <method name="GetDefaultPropOfContainer">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="s" name="prop" direction="in" />
+            <arg type="s" name="value" direction="out" />
+        </method>
+        <method name="GetContainerNetworkInformation">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="s" name="info" direction="out" />
+        </method>
+        <method name="SetGlobalEnvironmentVariable">
+            <arg type="s" name="key" direction="in" />
+            <arg type="s" name="value" direction="in" />
+        </method>
+        <method name="LoadImage">
+        </method>
+        <method name="IsImageReady">
+            <arg type="u" name="ready" direction="out" />
+        </method>
+        <method name="GetAllContainersAndImages">
+            <arg type="s" name="user" direction="in" />
+            <arg type="i" name="uid" direction="in" />
+            <arg type="a{ss}" name="value" direction="out" />
+        </method>
+        <method name="SwitchImage">
+            <arg type="s" name="repo" direction="in" />
+            <arg type="s" name="tag" direction="in" />
+            <arg type="b" name="ret" direction="out" />
+        </method>
+        <method name="RemoveOneContainer">
+            <arg type="s" name="container" direction="in" />
+            <arg type="b" name="ret" direction="out" />
+        </method>
+        <method name="RemoveOneImage">
+            <arg type="s" name="container" direction="in" />
+            <arg type="s" name="image" direction="in" />
+            <arg type="b" name="ret" direction="out" />
+        </method>
+        <method name="ComponentsUpgrade">
+            <arg type="s" name="args" direction="in" />
+        </method>
+        <signal name="ComponentsUpgradeFinished">
+            <arg type="s" name="args" />
+        </signal>
+        <signal name="Stopped">
+            <arg type="s" name="container" />
+        </signal>
+        <signal name="Started">
+            <arg type="s" name="container" />
+        </signal>
+        <signal name="ImageLoaded">
+            <arg type="u" name="loaded" />
+        </signal>
+        <signal name="ContainerRemoved">
+            <arg type="s" name="container" />
+            <arg type="b" name="ret" />
+        </signal>
+        <signal name="ImageRemoved">
+            <arg type="s" name="name" />
+            <arg type="b" name="ret" />
+        </signal>
+        <signal name="ServiceStartFailed">
+            <arg type="s" name="name" />
+        </signal>
+        <signal name="ServiceNotFound">
+            <arg type="s" name="name" />
+        </signal>
+        <signal name="ImageConfNotFound">
+        </signal>
+        <signal name="ImageFileNotFound">
+        </signal>
+        <signal name="ImageLoadFailed">
+        </signal>
+        <signal name="ImageNotMatched">
+        </signal>
+    </interface>
+</node>

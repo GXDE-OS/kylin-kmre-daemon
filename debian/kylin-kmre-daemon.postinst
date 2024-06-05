@@ -1,0 +1,25 @@
+#!/bin/sh
+
+#set -e
+
+case "$1" in
+    configure)
+        systemctl enable kylin-kmre-daemon.service >/dev/null || exit 0
+        #systemctl enable kylin-kmre-load-image.service || exit 0
+        systemctl daemon-reload || exit 0
+        udevadm control --reload || exit 0
+        systemctl start kylin-kmre-daemon.service >/dev/null || exit 0
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,92 @@
+kylin-kmre-daemon
+NOTICE===========================================
+Copyright (c) KylinSoft Co., Ltd. 2016-2024.All rights reserved.
+kylin-kmre-daemon is licensed under the GPL-3.0.
+
+This package is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License.
+.
+This package is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>
+
+The  GPL-3.0   License
+===========================================
+END OF kylin-kmre-daemon NOTICE
+
+
+
+--------THIRD-PARTY SOFTWARE NOTICES---------
+Libfuse NOTICE
+Copyright (C) 2001-2007  Miklos Szeredi <miklos@szeredi.hu>
+Copyright (C) 2011       Sebastian Pipping <sebastian@pipping.org>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.
+On Debian systems, the complete text of the GNU General Public
+License version 2 can be found in /usr/share/common-licenses/GPL-2.
+The  GPL-2.0   License
+===========================================
+END OF Libfuse NOTICE
+
+
+Simpleini NOTICE
+Copyright (c) 2006-2012, Brodie Thiesfield
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+The  MIT   License
+===========================================
+END OF Simpleini NOTICE
+
+
+Unicode NOTICE
+Copyright: 2001-2004 Unicode, Inc.
+
+This source code is provided as is by Unicode, Inc. No claims are
+made as to fitness for any particular purpose. No warranties of any
+kind are expressed or implied. The recipient agrees to determine
+applicability of information provided. If this file has been
+purchased on magnetic or optical media from Unicode, Inc., the
+sole remedy for any claim will be exchange of defective media
+within 90 days of receipt.
+. 
+Limitations on Rights to Redistribute This Code
+.
+Unicode, Inc. hereby grants the right to freely use the information
+supplied in this file in the creation of products supporting the
+Unicode Standard, and to make copies of this file in any form
+for internal or external distribution as long as this notice
+remains attached.
+The  Unicode   License
+===========================================
+END OF Unicode NOTICE
+
+
+THE OPEN SOURCE SOFTWARE IN THIS SOFTWARE IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY, WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. SEE THE APPLICABLE LICENSES FOR MORE DETAILS.

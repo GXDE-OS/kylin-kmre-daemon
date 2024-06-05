@@ -1,0 +1,14 @@
+[Unit]
+Description=Run kylin kmre dbus daemon at boot time
+
+[Service]
+Type=dbus
+BusName=cn.kylinos.Kmre
+ExecStart=/usr/bin/kylin-kmre-daemon
+StandardOutput=null
+StandardError=null
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+Alias=dbus-cn.kylinos.Kmre.service

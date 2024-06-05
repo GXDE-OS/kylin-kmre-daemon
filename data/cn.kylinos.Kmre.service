@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=cn.kylinos.Kmre
+Exec=/usr/bin/kylin-kmre-daemon
+User=root
+SystemdService=kylin-kmre-daemon.service

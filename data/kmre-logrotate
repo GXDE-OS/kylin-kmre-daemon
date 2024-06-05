@@ -1,0 +1,9 @@
+/var/log/kmre.log {
+	weekly
+	missingok
+	rotate 4
+	compress
+	notifempty
+	maxsize 20M
+	copytruncate
+}

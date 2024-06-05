@@ -1,0 +1,12 @@
+[Unit]
+Description=Check and load kylin kmre docker image at boot time
+ConditionPathExists=/usr/share/kmre/kmre-container-image.tar
+After=docker.service haveged.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/usr/bin/kylin-kmre-load-image
+
+[Install]
+WantedBy=multi-user.target
