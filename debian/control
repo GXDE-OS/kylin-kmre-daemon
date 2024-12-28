@@ -17,7 +17,7 @@ Standards-Version: 3.9.6
 Homepage: https://www.kylinos.cn
 
 Package: kylin-kmre-daemon
-Architecture: amd64 arm64 loong64
+Architecture: any
 #amd64 arm64
 Conflicts: kydroid2, kydroid2-app-data, kydroid2-daemon, kydroid2-filewatcher, kydroid2-fuse, kydroid2-image-data, kylin-kmre-fuse, kydroid-daemon, kydroid-fuse
 Replaces: kylin-kmre-fuse, kydroid-daemon, kydroid-fuse
