@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Machao <machao@kylinos.cn>
 Build-Depends: debhelper (>=9),
                cmake (>=2.8),
-               g++-9,
+               g++,
                pkg-config,
                libdbus-c++-dev,
                libdbus-1-dev,
