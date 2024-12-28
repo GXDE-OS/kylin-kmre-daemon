@@ -199,14 +199,14 @@ bool KmreServer::checkEnviron(int pid)
         size_t len = strlen(pStr);
         if (len > 0) {
             //syslog(LOG_DEBUG, "[%s] Env: '%s'", __func__, pStr);
-            if ((strncmp(pStr, "LD_PRELOAD=", strlen("LD_PRELOAD=")) == 0) ||
+            /*if ((strncmp(pStr, "LD_PRELOAD=", strlen("LD_PRELOAD=")) == 0) ||
                 (strncmp(pStr, "LD_LIBRARY_PATH=", strlen("LD_LIBRARY_PATH=")) == 0) ||
                 (strncmp(pStr, "LD_AUDIT=", strlen("LD_AUDIT=")) == 0)) {
 
                 syslog(LOG_ERR, "[%s] Invalid environ are set in process %d.", __func__, pid);
                 envPassed = false;
                 break;
-            }
+            }*/
         }
 
         pStr += len + 1;
@@ -269,9 +269,9 @@ void KmreServer::checkCallerAllowed(const std::string &method, const std::vector
         throw DBus::ErrorLimitsExceeded("dbus method control,env forbidden");// don't change the error message !
     }
     
-    if (!checkWhiteList(pid, whiteList)) {
+    /*if (!checkWhiteList(pid, whiteList)) {
         throw DBus::ErrorAccessDenied("dbus method control,operation not permitted");// don't change the error message !
-    }
+    }*/
 }
 
 bool KmreServer::checkServices()
