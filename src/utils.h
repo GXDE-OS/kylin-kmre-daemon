@@ -28,6 +28,7 @@
 #include <string>
 #include <vector>
 #include <set>
+#include <cstdint>
 
 #if !defined(AID_MEDIA_RW)
 #define AID_MEDIA_RW 1023
