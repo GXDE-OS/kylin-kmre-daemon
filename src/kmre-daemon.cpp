@@ -36,7 +36,8 @@
 
 #define LOG_IDENT "KMRE_kylin-kmre-daemon"
 
-static const std::string DKMS_MODULE_BINDER = "kmre-binder";
+static const std::string DKMS_MODULE_BINDER_KMRE = "kmre-binder";
+static const std::string DKMS_MODULE_BINDER = "binder_linux";
 static const std::string DKMS_MODULE_ASHMEM = "kmre-ashmem";
 static const std::string DKMS_MODULE_VIRTWIFI = "kmre-virtwifi";
 static const std::string KERNEL_MODULE_VIRTWIFI = "virt_wifi";
@@ -51,6 +52,8 @@ static void try_load_binder_module()
 {
     if (!isPathCharDevice("/dev/binder") || !isPathCharDevice("/dev/hwbinder") || !isPathCharDevice("/dev/vndbinder")) {
         loadModule(DKMS_MODULE_BINDER);
+	loadModule("binder");
+        loadModule(DKMS_MODULE_BINDER_KMRE);
     }
 }
 
